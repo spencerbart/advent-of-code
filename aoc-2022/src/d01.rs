@@ -1,8 +1,11 @@
-use std::{io::Read, vec};
+use std::{
+    io::{stdin, Read},
+    vec,
+};
 
 pub fn p01() {
     let mut input = String::new();
-    std::io::stdin().read_to_string(&mut input).unwrap();
+    stdin().read_to_string(&mut input).unwrap();
 
     let mut max = 0;
     let mut count = 0;
@@ -25,7 +28,7 @@ pub fn p01() {
 
 pub fn p02() {
     let mut input = String::new();
-    std::io::stdin().read_to_string(&mut input).unwrap();
+    stdin().read_to_string(&mut input).unwrap();
 
     let mut sums = vec![];
     let mut count = 0;
